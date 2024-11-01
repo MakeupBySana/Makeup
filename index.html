@@ -8,56 +8,76 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <style>
+        /* Dark mode settings */
         body {
             font-family: 'Roboto', sans-serif;
             line-height: 1.6;
-            background-color: #f0f4f8;
-            color: #333;
+            background-color: #121212; /* Dark background */
+            color: #ffffff; /* White text */
         }
 
         header {
             text-align: center;
             padding: 50px 20px;
-            background: #f8f9fa;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: #1e1e1e;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
 
         header h1 {
             font-size: 3rem;
             margin-bottom: 10px;
-            color: #007bff;
+            color: #ff4444; /* Red text for headings */
         }
 
         header p {
             font-size: 1.2rem;
-            color: #6c757d;
+            color: #cccccc;
         }
 
-        nav {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
+        /* Navigation styling */
+        .nav-menu ul {
+            list-style-type: none;
+            padding: 0;
         }
 
-        nav a {
-            margin: 0 15px;
-            color: #007bff;
+        .nav-menu ul li {
+            display: inline;
+        }
+
+        .nav-menu a {
+            color: #ff4444;
             text-decoration: none;
-            font-weight: 500;
+            margin: 0 15px;
+            font-weight: bold;
         }
 
-        nav a:hover {
-            color: #0056b3;
+        .nav-menu a:hover {
+            color: #ff8888;
             text-decoration: underline;
         }
 
+        /* Section styling for Services, Portfolio, etc. */
+        section {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: #ff4444;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Gallery images */
         .gallery img {
             width: 100%;
             height: auto;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s;
         }
 
@@ -65,126 +85,60 @@
             transform: scale(1.05);
         }
 
+        /* Footer styling */
         footer {
-            background: #343a40;
-            color: #fff;
+            background: #1e1e1e;
+            color: #ffffff;
             padding: 20px 0;
             text-align: center;
         }
 
-        footer p {
-            margin: 0;
-        }
-
-        footer .social-icons {
-            margin-top: 10px;
-        }
-
         footer .social-icons i {
-            color: #fff;
+            color: #ff4444;
             margin: 0 10px;
+            font-size: 1.5rem;
             transition: color 0.3s;
         }
 
         footer .social-icons i:hover {
-            color: #007bff;
+            color: #ff8888;
         }
 
         .highlight {
             font-size: 1.5rem;
-            color: #007bff;
+            color: #ff4444;
         }
 
         .contact-info {
             font-size: 1.2rem;
             margin-bottom: 20px;
-            text-align: left; /* Aligns the text to the left */
+            text-align: left;
         }
 
+        /* Buttons and form inputs */
         .form-group label {
             font-weight: 500;
+            color: #ffffff;
         }
 
         .btn-primary {
+            background-color: #ff4444;
+            border: none;
             border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+            box-shadow: 0 4px 8px rgba(255, 68, 68, 0.3);
+            color: #ffffff;
+            transition: background-color 0.3s;
         }
 
-        video {
-            width: 100%;
-            max-width: 500px;
-            height: auto;
+        .btn-primary:hover {
+            background-color: #ff8888;
         }
-
-           * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    /* Header Styling */
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-        background-color: #f8f8f8;
-        text-align: center;
-    }
-
-    .header-content h1 {
-        font-size: 2.5rem;
-        color: #333;
-    }
-
-    .header-content h1 span {
-        color: #a64ca6; /* Accent color */
-    }
-
-    .header-content p {
-        font-size: 1.2rem;
-        color: #666;
-        margin-top: 8px;
-    }
-
-    /* Navigation Menu Styling */
-    .nav-menu ul {
-        list-style: none;
-        display: flex;
-        gap: 15px;
-        margin-top: 20px;
-    }
-
-    .nav-menu ul li a {
-        text-decoration: none;
-        color: #333;
-        font-weight: 500;
-        padding: 8px 12px;
-        border-radius: 4px;
-        transition: background 0.3s ease;
-    }
-
-    .nav-menu ul li a:hover {
-        background-color: #a64ca6;
-        color: #fff;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
-        .header-content h1 {
-            font-size: 2rem;
-        }
-        .nav-menu ul {
-            flex-direction: column;
-            gap: 10px;
-        }
-    }
     </style>
 </head>
 
 <body>
 
-   <header>
+    <header>
         <div class="header-content">
             <h1>Welcome to <span>Sana's Makeup Studio</span></h1>
             <p>Your Destination for Professional Makeup Services</p>
@@ -201,26 +155,25 @@
     </header>
 
     <section id="services" class="container mt-5">
-        <h2 class="text-center">Our Services</h2>
+        <h2>Our Services</h2>
         <div class="row text-center mt-4">
             <div class="col-md-3">
-                <i class="fas fa-umbrella-beach fa-3x mb-3"></i>
+                <i class="fas fa-umbrella-beach fa-3x mb-3" style="color: #ff4444;"></i>
                 <h4>Bridal Makeup</h4>
                 <p>Transform into a stunning bride with our special bridal packages.</p>
             </div>
             <div class="col-md-3">
-                <i class="fas fa-glass-cheers fa-3x mb-3"></i>
+                <i class="fas fa-glass-cheers fa-3x mb-3" style="color: #ff4444;"></i>
                 <h4>Party Makeup</h4>
                 <p>Look fabulous for any event or party with our customized makeup looks.</p>
             </div>
             <div class="col-md-3">
-                <i class="fas fa-camera fa-3x mb-3"></i>
+                <i class="fas fa-camera fa-3x mb-3" style="color: #ff4444;"></i>
                 <h4>Pakistani Makeup</h4>
                 <p>Achieve a high-fashion look with our editorial makeup services.</p>
             </div>
-
             <div class="col-md-3">
-                <i class="fas fa-camera fa-3x mb-3"></i>
+                <i class="fas fa-camera fa-3x mb-3" style="color: #ff4444;"></i>
                 <h4>HD Makeup</h4>
                 <p>Achieve a high-fashion look with our HD makeup services.</p>
             </div>
@@ -228,7 +181,7 @@
     </section>
 
     <section id="portfolio" class="container mt-5">
-        <h2 class="text-center">Our Portfolio</h2>
+        <h2>Our Portfolio</h2>
         <div class="row mt-4 gallery">
             <div class="col-md-4">
                 <img src="makeup-look-1.jpg" alt="Bridal makeup with soft, natural tones">
@@ -239,47 +192,12 @@
             <div class="col-md-4">
                 <img src="makeup-look-3.jpg" alt="Editorial makeup with dramatic, high-fashion look">
             </div>
-            <div class="col-md-4">
-                <img src="makeup-look-4.jpg" alt="Elegant makeup look for evening events">
-            </div>
-            <div class="col-md-4">
-                <img src="makeup-look-5.jpg" alt="Natural and glowing everyday makeup">
-            </div>
-            <div class="col-md-4">
-                <img src="makeup-look-6.jpg" alt="Classic bridal look with defined eyes">
-            </div>
-            <div class="col-md-4">
-                <img src="makeup-look-7.jpg" alt="Soft glam makeup for daytime events">
-            </div>
-        </div>
-    </section>
-
-    <section id="testimonials" class="container mt-5">
-        <h2 class="text-center">Testimonials</h2>
-        <div class="row mt-4">
-            <div class="col-md-4">
-                <blockquote class="blockquote">
-                    <p>"Absolutely loved my makeup! Sana made me look and feel amazing."</p>
-                    <footer class="blockquote-footer">Ayesha R.</footer>
-                </blockquote>
-            </div>
-            <div class="col-md-4">
-                <blockquote class="blockquote">
-                    <p>"The best makeup experience I've had. Highly recommend her services!"</p>
-                    <footer class="blockquote-footer">Fatima S.</footer>
-                </blockquote>
-            </div>
-            <div class="col-md-4">
-                <blockquote class="blockquote">
-                    <p>"Incredible work! The makeup lasted all day and looked flawless."</p>
-                    <footer class="blockquote-footer">Hina M.</footer>
-                </blockquote>
-            </div>
+            <!-- Additional images... -->
         </div>
     </section>
 
     <section id="contact" class="container mt-5">
-        <h2 class="text-center">Contact Us</h2>
+        <h2>Contact Us</h2>
         <div class="text-left mb-3 contact-info">
             <p><span class="highlight">Name:</span> Sana Khan</p>
             <p><span class="highlight">Mobile:</span> 8329611104</p>
@@ -301,3 +219,19 @@
             <button type="submit" class="btn btn-primary btn-block">Submit</button>
         </form>
     </section>
+
+   <footer>
+    <p>&copy; 2024 Sana's Makeup Studio. All rights reserved.</p>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/sana_khan5596_/profilecard/?igsh=MWg0Mm82d29xZGgyZQ==" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/qr/BZLO3TYTA3STM1" target="_blank" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+</footer>
+
+</body>
+</head>
+</html>
