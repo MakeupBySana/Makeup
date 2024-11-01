@@ -4,7 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Sana's Makeup Studio</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Link to Google Fonts for custom font style -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        /* Reset default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Overall theme styling */
+        body {
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.2rem; /* Increased font size */
+            line-height: 1.6;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #1e1e1e; /* Dark header */
+            text-align: center;
+            padding: 3rem 0; /* Increased padding for better spacing */
+            border-bottom: 3px solid #ff4444; /* Red border */
+        }
+
+        header h1 {
+            color: #ff4444; /* Red color for the heading */
+            font-size: 3rem; /* Larger font for header */
+            font-weight: 700; /* Bold font */
+            letter-spacing: 1px; /* Slight letter spacing */
+        }
+
+        /* Main content styling */
+        main {
+            padding: 2rem; /* Padding for the main content */
+        }
+
+        section {
+            background-color: #1e1e1e; /* Dark background for sections */
+            padding: 2.5rem; /* Increased padding for sections */
+            border-radius: 8px; /* Rounded corners */
+            margin-bottom: 2rem; /* Space below each section */
+            box-shadow: 0 4px 15px rgba(255, 68, 68, 0.5); /* Red shadow effect */
+        }
+
+        section h2 {
+            color: #ff4444; /* Red color for section headings */
+            font-size: 2.5rem; /* Increased font size for section headings */
+            margin-bottom: 1rem; /* Space below section headings */
+            text-align: center; /* Centering section headings */
+        }
+
+        p {
+            font-size: 1.2rem; /* Font size for paragraph */
+            color: #fff; /* White color for text */
+            text-align: center; /* Centering paragraph text */
+        }
+
+        /* Link styling */
+        a {
+            color: #ff4444; /* Red color for links */
+            text-decoration: none; /* No underline */
+            font-weight: bold; /* Bold font */
+        }
+
+        a:hover {
+            color: #fff; /* White color on hover */
+            background-color: #ff4444; /* Red background on hover */
+            padding: 0.5rem; /* Padding around the link */
+            border-radius: 4px; /* Rounded corners */
+            transition: background-color 0.3s ease; /* Smooth transition */
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #1e1e1e; /* Dark footer */
+            color: #fff; /* White text */
+            text-align: center; /* Centering text */
+            padding: 2rem 0; /* Padding for footer */
+            border-top: 3px solid #ff4444; /* Red border on top */
+            margin-top: 2rem; /* Space above footer */
+        }
+
+        footer p {
+            font-size: 1rem; /* Font size for footer text */
+        }
+
+        footer .social-icons {
+            margin-top: 1rem; /* Space above social icons */
+        }
+
+        footer .social-icons i {
+            color: #ff4444; /* Red color for social icons */
+            margin: 0 10px; /* Space between icons */
+            transition: color 0.3s; /* Smooth transition for hover */
+        }
+
+        footer .social-icons i:hover {
+            color: #fff; /* Change icon color on hover */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -13,9 +115,17 @@
     <main>
         <section>
             <h2>Book an Appointment</h2>
-            
+            <p>Sana Khan</p>
             <p>Phone: +91-8329611104</p>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2024 Sana's Makeup Studio. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
 </body>
 </html>
