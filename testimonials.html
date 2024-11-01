@@ -4,19 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testimonials - Sana's Makeup Studio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General body styling */
+        body {
+            background-color: #121212; /* Dark background */
+            color: #ffffff; /* White text for contrast */
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #1e1e1e;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 2px solid #ff4444; /* Red accent line */
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #ff4444; /* Red heading text */
+            margin: 0;
+            font-family: 'Montserrat', sans-serif; /* Stylish font for the heading */
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #cccccc; /* Light grey text */
+        }
+
+        /* Section styling */
+        main {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        section {
+            max-width: 800px;
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #ff4444; /* Red subheading */
+            margin-top: 20px;
+            font-family: 'Montserrat', sans-serif; /* Stylish font for subheading */
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #cccccc; /* Light grey text */
+            margin: 10px 0;
+            font-style: italic; /* Italic style for client quotes */
+        }
+
+        /* Client name styling */
+        .client-name {
+            font-weight: bold;
+            color: #ff4444; /* Red color for client names */
+        }
+
+        /* Footer styling for additional content */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #ff4444;
+            background-color: #1e1e1e;
+            font-size: 1rem;
+            border-top: 2px solid #ff4444;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Testimonials</h1>
-        <p>Read what our clients have to say about us.</p>
+        <p>Our Happy clients 😉 </p>
     </header>
     <main>
         <section>
             <h2>Client Feedback</h2>
             <p>"Sana did an incredible job for my wedding! I felt so beautiful."</p>
-            <p>"The best makeup artist in town. Professional and skilled."</p>
+            <p class="client-name">— Hina Khan</p>
+
+            <p>"Sana ne mere shadi ka Makeup bahoot Acha kiya tha, Thank you!"</p>
+            <p class="client-name">— Kausar Anjum</p>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2024 Sana's Makeup Studio. All rights reserved.</p>
+    </footer>
 </body>
 </html>
